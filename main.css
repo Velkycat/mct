@@ -1,0 +1,44 @@
+#title {
+    text-align:center;
+    font-family:Palatino Linotype;
+    max-width:400px;
+    margin:auto;
+    padding:15px;
+}
+
+.boxparent {
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    margin-top: 2%;
+    width: 50%;
+}
+
+.textbox {
+    font-size: .8rem;
+    letter-spacing:1px;
+    font-family: Palatino Linotype;
+    padding:10px;
+    line-height:1.5;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-shadow:1.25px 1.25px 1.25px #222222;
+    resize: none;
+}
+
+#entertext {
+    position:absolute;
+    font-size:20px;
+    margin-left:585px;
+    font-family: Palatino Linotype;
+}
+
+#input {
+    display:inline-block;
+    padding:10px;
+}
+
+#output {
+    position:relative;
+    right:-16px;
+}
