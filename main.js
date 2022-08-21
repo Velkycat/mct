@@ -50,7 +50,7 @@ let eng = {
 
 let input = document.getElementById('input');
 let output = document.getElementById('output');
-input.addEventListener('keypress', function(event) {
+input.addEventListener('keyup', function(event) {
     out = eng2mc(input.value);
     output.value = out;
 })

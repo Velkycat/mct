@@ -9,9 +9,9 @@
 .boxparent {
     display: flex;
     flex-wrap: wrap;
-    margin: auto;
+    margin-left:16.5%;
     margin-top: 2%;
-    width: 50%;
+    width: 65%;
 }
 
 .textbox {
@@ -29,7 +29,7 @@
 #entertext {
     position:absolute;
     font-size:20px;
-    margin-left:585px;
+    margin-left:310px;
     font-family: Palatino Linotype;
 }
 
