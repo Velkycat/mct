@@ -45,77 +45,32 @@ let eng = {
     '-':' _...._',
     '/':' _.._.',
     '=':' _..._',
-    ' ':' //'
+    ' ':' //',
 };
+
+let switch2 = document.getElementById('switch');
+switch2.addEventListener('click', function() {
+    window.location.href = 'morse.html'
+})
 
 let input = document.getElementById('input');
 let output = document.getElementById('output');
 input.addEventListener('keyup', function(event) {
-    out = eng2mc(input.value);
+    out = eng2Mc(input.value);
     output.value = out;
 })
 
-function eng2mc(string) {
+function eng2Mc(string) {
   let output = "";
   const characters = string.toLowerCase().split("")
   console.log(characters)
   for (let character of characters) {
     console.log(character)
     if (character === " ") {
-      output += "    "  // 4 spaces (+3 of last letter, makes 7)
+      output += ' // '  // 4 spaces (+3 of last letter, makes 7)
     } else if(eng[character]){
       output += eng[character] + "   "  // 3 spaces between letters
     }
   }
   return output
 }
-
-
-let mc = {
-    '._':'a',
-    '_...':'b',
-    '_._.':'c',
-    '_..':'d',
-    '.':'e',
-    '.._.':'f',
-    '__.':'g',
-    '....':'h',
-    '..':'i',
-    '.___':'j',
-    '_._':'k',
-    '._..':'l',
-    '__':'m',
-    '_.':'n',
-    '___':'o',
-    '.__.':'p',
-    '__._':'q',
-    '._.':'r',
-    '...':'s',
-    '_':'t',
-    '.._':'u',
-    '..._':'v',
-    '.__':'w',
-    '_.._':'x',
-    '_.__':'y',
-    '__..':'z',
-    '.____':'1',
-    '..___':'2',
-    '...__':'3',
-    '...._':'4',
-    '.....':'5',
-    '_....':'6',
-    '__...':'7',
-    '___..':'8',
-    '____.':'9',
-    '_____':'10',
-    '..__..':'?',
-    '_._.__':'!',
-    '._._._':'.',
-    '__..__':',',
-    '_._._.':';',
-    '___...':':',
-    '._._.':'+',
-    '_...._':'-',
-    '_.._.':'/',
-    '_..._':'=',
-};
