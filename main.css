@@ -1,3 +1,13 @@
+#switch {
+    position: absolute;
+    right:21.5rem;
+    border-radius:20px;
+    padding:7px;
+    background-color:#444;
+    color:#eee;
+    border:1px solid #888;
+}
+
 #title {
     text-align:center;
     font-family:Palatino Linotype;
@@ -44,14 +54,4 @@
 #output {
     position:relative;
     right:-16px;
-}
-
-#switch {
-    position: absolute;
-    right:21.5rem;
-    border-radius:20px;
-    padding:7px;
-    background-color:#444;
-    color:#eee;
-    border:1px solid #888;
 }
