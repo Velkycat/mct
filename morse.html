@@ -10,6 +10,7 @@
 <style>
 body {
     background-color:#555555;
+    text-align:center;
 }
 </style>
 <body>
@@ -18,13 +19,11 @@ body {
     <h2>created 8/22</h2>
 </div>
 <br>
-<a id="entertext">Enter Morse Code here (hit enter when you've finished typing):</a>
-<button id="switch" href="main.html">Translate to Morse</button>
 <form class="boxparent" method="post">
-    <textarea class="textbox" id="input" rows="10" cols="80" placeholder="Enter Morse Code here"> </textarea>
+    <textarea class="textbox" id="input" rows="10" cols="80" placeholder="Enter Morse Code here"></textarea>
     <textarea readonly class="textbox" id="output" rows="10" cols="80"></textarea>
 </form>
-
+<button id="switch" href="main.html">Translate to Morse</button>
 <script src="morse.js"></script>
 </body>
 </html>

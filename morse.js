@@ -54,11 +54,9 @@ switch2.addEventListener('click', function() {
 
 let input = document.getElementById('input');
 let output = document.getElementById('output');
-input.addEventListener('keydown', function(event) {
-    if (event.keyCode === 13) {
+input.addEventListener('keyup', function(event) {
         out = mc2Eng(input.value)
         output.value = out;
-    }
 })
 
 function mc2Eng(string) {

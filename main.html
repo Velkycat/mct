@@ -10,6 +10,7 @@
 <style>
 body {
     background-color:#555555;
+    text-align:center;
 }
 </style>
 <body>
@@ -18,13 +19,11 @@ body {
     <h2>created 8/22</h2>
 </div>
 <br>
-<a id="entertext">Enter text here:</a>
-<button id="switch" href="morse.html">Translate to English</button>
 <form class="boxparent" method="post">
-    <textarea class="textbox" id="input" rows="10" cols="80" placeholder="Enter text here"> </textarea>
-    <textarea readonly class="textbox" id="output" rows="10" cols="80"></textarea>
+    <textarea class="textbox" id="input" placeholder="Enter text here"></textarea>
+    <textarea readonly class="textbox" id="output"></textarea>
 </form>
-
+<button id="switch" href="morse.html">Translate to English</button>
 <script src="main.js"></script>
 </body>
 </html>
