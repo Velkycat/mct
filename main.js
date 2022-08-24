@@ -68,9 +68,9 @@ function eng2Mc(string) {
   for (let character of characters) {
     console.log(character)
     if (character === " ") {
-      output += ' // '  // 4 spaces (+3 of last letter, makes 7)
+      output += ' // '
     } else if(eng[character]){
-      output += eng[character] + "   "  // 3 spaces between letters
+      output += eng[character] + "   "
     }
   }
   return output
