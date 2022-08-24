@@ -35,5 +35,3 @@ def mc2eng(str):
             op=op+output[i]
             i+=1
     print(op)
-
-mc2eng('.... ..')
