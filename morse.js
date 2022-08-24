@@ -63,7 +63,7 @@ function mc2Eng(string) {
     let output = "";
     newstr=string.split(" ")
     for (let character of newstr) {
-        if (character === ' // ') {
+        if (character === '//') {
             output +=  " "
         } else if(mc[character]){
             output += mc[character]
